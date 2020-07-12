@@ -1,0 +1,81 @@
+<html>
+<head>
+	<title>Survey Form</title>
+	<link href="formstyle.css" type="text/css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Galada&family=Patrick+Hand&display=swap" rel="stylesheet">
+	</head>
+
+<body class="parallax">
+	<main id="main" class="center">
+		<div class="margin">
+			<h1 id="title">Survey Form</h1>
+			<p id="description">Help us to improve our menu.</p>
+
+			<form id="survey-form">
+				
+				<p id="name-label"><label for="name">Name:</label><br>
+				<input type="text" id="name" name="name" required placeholder="Enter your first and last name"></p>
+				
+				<p id="email-label"><label for="email">Email:</label><br>
+				<input type="email" id="email" name="email" required placeholder="Enter a valid email address"></p>
+
+				<p id="number-label"><label for="number">Number:</label><br>
+				<input type="text" id="number" name="number" required placeholder="Enter a valid phone number"></p>
+			
+			
+
+			<p>Do you like donuts?</p>
+			<input type="radio" name="like_donuts"
+			value="yes" checked> Yes
+			<input type="radio" name="like_donuts"
+			value="no"> No<br><br>
+			
+			<div>
+				<label id="dropdown">Which drink do you prefer with your donuts?</label><br>
+				<select name="dropdown" id="dropdown">
+  				<option value="coffee">Coffee</option>
+  				<option value="tea">Tea</option>
+  				<option value="juice">Juice</option>
+  				<option value="milk">Milk</option>
+  				</select>
+  			
+			</div>
+
+			<p>Choose your favorite flavour: (You can check more than one) </p>
+
+			<div>
+  			<input type="checkbox" id="chocolat" name="chocolat" checked value="chocolat">
+ 	 		<label for="chocolat">Chocolat</label>
+			</div>
+
+			<div>
+  			<input type="checkbox" id="strawberry" name="strawberry" value="strawberry">
+  			<label for="strawberry">Strawberry</label>
+			</div>
+
+			<div>
+  			<input type="checkbox" id="coconut" name="coconut" value="coconut">
+  			<label for="coconut">Coconut</label>
+			</div>
+
+			<div>
+  			<input type="checkbox" id="vanilla" name="vanilla" value="vanilla">
+  			<label for="vanilla">Vanilla</label>
+			</div>
+
+
+			<p><label for="story">Any sugestion of food that you would like to see on our menu?</label></p>
+
+			<textarea id="recipe" name="recipe" rows="5" cols="33">
+				Tell us...
+			</textarea>
+
+			<p><input id="submit" type="submit" value="Submit"></p>
+
+			</form>
+
+
+		</div>
+	</main>
+</body>
+</html>
